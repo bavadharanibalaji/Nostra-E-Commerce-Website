@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--Top Banner-->
+    <div class="top-banner" id="banner">
+        Sign Up and GET 20% OFF on your first order!
+        <span onclick="closeBanner()" style="float: right;"><i class="fa-regular fa-circle-xmark fa-lg"
+                style="color: rgb(255, 255, 255);"></i></span>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+
+        <div class="navbar_s1">
+            <h1>NOSTRA</h1>
+        </div>
+
+        <div class="navbar_s2">
+            <a href="index.html">Home</a>
+            <a href="#new-arrivals">New Arrivals</a>
+            <a href="#popular">Most Popular</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <div class="navbar_s3">
+            <div class="wishlist-nav">
+                <i class="fa-solid fa-heart fa-xl" style="color: rgb(2, 26, 84);"></i>
+                <span id="wishlist-count"></span>
+            </div>
+
+            <i class="fa-solid fa-cart-arrow-down fa-xl" style="color: rgb(2, 26, 84);"></i>
+            <i class="fa-solid fa-circle-user fa-xl" style="color: rgb(2, 26, 84);"></i>
+        </div>
+     </div>
+
+
+    <!--Slider Section-->
+    <div class="slider">
+
+        <div class="slide active">
+            <img src="./images/saleimg2.jpg" alt="img">
+            <div class="slide-content">
+                <h1>Level Up Your Style With Our!</h1>
+                <h2>Summer Collection</h2>
+                <button onclick="goToShop()"><a href="collections.html">Shop Now</a></button>
+
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="./images/saleimg3.jpg" alt="img">
+            <div class="slide-content">
+                <h1>Explore New Trends</h1>
+                <h2>Limited Edition Offers</h2>
+                <button onclick="goToShop()">Shop Now</button>
+
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="./images/saleimg1.jpg" alt="img">
+            <div class="slide-content">
+                <h1>Upgrade Your Wardrobe</h1>
+                <h2>Seasonal Discounts% Off</h2>
+                <button onclick="goToShop()">Shop Now</button>
+
+            </div>
+        </div>
+
+        <button class="arrow left" onclick="preSlide()"><i class="fa-solid fa-chevron-left fa-xl"
+                style="color: rgb(244, 246, 252);"></i></button>
+        <button class="arrow right" onclick="nextSlide()"><i class="fa-solid fa-chevron-right fa-xl"
+                style="color: rgb(252, 252, 252);"></i></button>
+
+
+    </div>
+
+    <!--Brand Section-->
+    <div class="brand">
+        <h2>Our Brands</h2>
+        <div class="brand-container">
+            <img src="./images/puma.jpg" alt="brand">
+            <img src="./images/nike.jpg" alt="brand">
+            <img src="./images/adidas.jpg" alt="brand">
+            <img src="./images/reebok.jpg" alt="brand">
+            <img src="./images/levi.jpg" alt="brand">
+        </div>
+    </div>
+
+    <!--About Section-->
+
+    <div class="about">
+        <h2>About Us</h2>
+        <h3>We Provides Best Customer Service!</h3>
+
+        <div class="about-container">
+
+
+            <div class="item">
+
+                <i class="fa-solid fa-shield-halved fa-xl" style="color: #0F2854;"></i>
+                <h5>original Products</h5>
+                <p>Discover exclusive, high-quality products crafted to meet your needs. Shop the latest trends and
+                    timeless essentials, all designed to offer premium value and unmatched!</p>
+            </div>
+
+            <div class="item">
+
+                <i class="fa-solid fa-box-open fa-xl" style="color: #0F2854;"></i>
+                <h5>Satisfaction Guarantee</h5>
+                <p>Enjoy a hassle-free shopping experience with our 100% Satisfaction Guarantee. If you're not
+                    completely happy with your purchase!.</p>
+            </div>
+
+            <div class="item">
+
+                <i class="fa-solid fa-calendar-plus fa-xl" style="color: #0F2854;"></i>
+                <h5>New Arrival Everyday</h5>
+                <p>Discover the latest trends with our New Arrivals, updated daily! Shop fresh styles and must-have
+                    products to stay ahead of the curve.!</p>
+            </div>
+
+            <div class="item">
+
+                <i class="fa-solid fa-truck-fast fa-xl" style="color: #0F2854;"></i>
+                <h5>Fast & Free Shipping</h5>
+                <p>Enjoy fast & free shipping on every order! Shop with confidence, knowing your products will arrive
+                    quickly without any extra cost.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--New Arrivals Section-->
+    <div class="new-arrivals" id="new-arrivals">
+    <h2>New Arrivals</h2>
+    <div class="new-arrivals-container">
+        <div class="product-card">
+            <img src="./images/mencloth.jpg" alt="New Arrival">
+            <button class="shop-now-btn">Shop Now →</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/casual.jpeg" alt="New Arrival">
+            <button class="shop-now-btn">Shop Now →</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/casual shirt.jpg" alt="New Arrival">
+            <button class="shop-now-btn">Shop Now →</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/trendy top.jpg" alt="New Arrival">
+            <button class="shop-now-btn">Shop Now →</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/men kurta.jpg" alt="New Arrival">
+            <button class="shop-now-btn">Shop Now →</button>
+        </div>
+        </div>
+
+    </div>
+
+
+
+     <!--Most Popular section-->
+
+      <div class="popular">
+            <h2>Most Popular</h2>
+        </div>
+
+     <div class="popular-container" id="popular">
+
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/casual.jpeg" alt="img">
+        </div>
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/women kurti.jpg" alt="img">
+        </div>
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/men t-shirt.jpg" alt="img">
+        </div>
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/trendy top.jpg" alt="img">
+        </div>
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/party3.jpg" alt="img">
+        </div>
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/long kurti.jpg" alt="img">
+        </div>
+
+        <div class="popular-box">
+
+            <div class="sale-tag">Sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+             
+            <img src="./images/formal shirts.jpg" alt="img">
+        </div>
+
+     </div>
+    
+
+    
+
+    <!--Banner Section-->
+
+    <div class="sale">
+        <div>
+            <img src="./images/sale ban.jpg" alt="banner">
+        </div>
+
+        <div class="sale-content">
+            <h1>Bringing Ethnic, Elegant To You!</h1>
+            <p>"Style that speaks your identity"</p>
+            <button> <a href="collections.html">Shop Now</a></button>
+        </div>
+    </div>
+
+    <!--NEWS Letter-->
+
+    <div class="letter">
+        <h1>Join Our NEWS Letter</h1>
+        <h5>Signup for our email newspaper to get exclusive discounts, updates, and more
+        </h5>
+        <input type="email" id="email" required>
+        <br> <button>Subscribe Now</button>
+    </div>
+
+    <!--Footer Section-->
+
+    <div class="footer">
+        <div class="footer-s1">
+            <h1 style="text-shadow: 1px 1px 2px rgba(254, 252, 252, 0.903);">NOSTRA</h1>
+            <p style="color: beige; font-size: 16px; margin-bottom: 30px;">Style that speaks your identity</p>
+            <p>Discover the ultimate shopping experience with our e-commerce platform! Enjoy a wide range of products,
+                unbeatable deals, and fast & free shipping on every order—delivered right to your door.</p>
+        </div>
+
+        <div class="footer-s2">
+            <div class="social-links">
+                <i class="fa-brands fa-whatsapp fa-xl" style="color: rgb(255, 255, 255);"></i>
+
+                <i class="fa-brands fa-instagram fa-xl" style="color: rgb(255, 255, 255);"></i>
+                
+                <i class="fa-brands fa-facebook fa-xl" style="color: rgb(255, 255, 255);"></i>
+
+                <i class="fa-brands fa-twitter fa-xl" style="color: rgb(255, 255, 255);"></i>
+
+                <i class="fa-solid fa-at fa-xl" style="color: rgb(255, 255, 255);"></i>
+            </div>
+
+            <div class="copy">
+                @copy Nostra.com
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

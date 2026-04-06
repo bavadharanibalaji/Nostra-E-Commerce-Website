@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--Top Banner-->
+    <div class="top-banner" id="banner">
+        Sign Up and GET 20% OFF on your first order!
+        <span onclick="closeBanner()" style="float: right;"><i class="fa-regular fa-circle-xmark fa-lg"
+                style="color: rgb(255, 255, 255);"></i></span>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+
+        <div class="navbar_s1">
+            <h1>NOSTRA</h1>
+        </div>
+
+        <div class="navbar_s2">
+            <a href="index.html">Home</a>
+            <a href="#new-arrivals">New Arrivals</a>
+            <a href="#most-popular">Most Popular</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <div class="navbar_s3">
+            <div class="wishlist-nav">
+                <i class="fa-solid fa-heart fa-xl" style="color: rgb(2, 26, 84);"></i>
+                <span id="wishlist-count"></span>
+            </div>
+
+            <i class="fa-solid fa-cart-arrow-down fa-xl" style="color: rgb(2, 26, 84);"></i>
+            <i class="fa-solid fa-circle-user fa-xl" style="color: rgb(2, 26, 84);"></i>
+        </div>
+    </div>
+
+
+    <!-- Hamburger Menu -->
+    <div class="navbar_s4"><i class="fa-solid fa-bars fa-lg" style="color: rgb(2, 26, 84);"></i></div>
+
+    <!--side menu-->
+
+    <div class="side-menu" id="sideMenu">
+
+        <span class="close-btn" onclick="closeMenu()"><i class="fa-regular fa-circle-xmark fa-lg"
+                style="color: rgb(2, 26, 84);"></i></span>
+
+         <a href="index.html">Home</a>
+        <a href="#new-arrivals" cat="new">New Arrivals</a>
+        <a href="#most-popular" cat="popular">Most Popular</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <section class="contact-section">
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+       
+
+    <div class="contact-container">
+        <div class="contact-info">
+            
+            <p>Have something to say? We are here to help. Fill up the form or send email or call phone.</p>
+            
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>44, Vellore</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Nostra@company.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>91+ 8825639768</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Message" rows="5"></textarea>
+                <button type="submit" class="send-btn"><a href="submit.html">Send Message</a></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+ <!--Footer Section-->
+
+    <div class="footer" style="margin-top: 0;">
+        <div class="footer-s1">
+            <h1 style="text-shadow: 1px 1px 2px rgba(254, 252, 252, 0.903);">NOSTRA</h1>
+            <p style="color: beige; font-size: 16px; margin-bottom: 30px;">Style that speaks your identity</p>
+            <p>Discover the ultimate shopping experience with our e-commerce platform! Enjoy a wide range of products,
+                unbeatable deals, and fast & free shipping on every order—delivered right to your door.</p>
+        </div>
+
+        <div class="footer-s2">
+            <div class="social-links">
+                <i class="fa-brands fa-whatsapp fa-xl" style="color: rgb(255, 255, 255);"></i>
+
+                <i class="fa-brands fa-instagram fa-xl" style="color: rgb(255, 255, 255);"></i>
+                
+                <i class="fa-brands fa-facebook fa-xl" style="color: rgb(255, 255, 255);"></i>
+
+                <i class="fa-brands fa-twitter fa-xl" style="color: rgb(255, 255, 255);"></i>
+
+                <i class="fa-solid fa-at fa-xl" style="color: rgb(255, 255, 255);"></i>
+            </div>
+
+            <div class="copy">
+                @copy Nostra.com
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
